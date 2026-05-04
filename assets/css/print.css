@@ -1,0 +1,22 @@
+/* ============================================================
+   Estilos para impresión y vista imprimible
+   ============================================================ */
+
+@media print {
+    body { background: #fff !important; color: #000 !important; font-size: 12pt; }
+    .no-print { display: none !important; }
+    .container { margin: 0; padding: 0; max-width: 100%; }
+    .report {
+        border: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .table th, .table td {
+        border: 1px solid #000 !important;
+        padding: 4px 6px;
+    }
+    .table th { background: #eee !important; -webkit-print-color-adjust: exact; }
+    a { color: #000; text-decoration: none; }
+    .report-header h1, .report-title { color: #000 !important; }
+    .report-title { border-top: 2px solid #000; border-bottom: 2px solid #000; }
+}

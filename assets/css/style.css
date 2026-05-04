@@ -1,0 +1,323 @@
+/* ============================================================
+   Estilos base del Sistema de Contabilidad
+   ============================================================ */
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f4f6f9;
+    color: #2c2c2c;
+    font-size: 14px;
+}
+
+a { color: #1d6fa5; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* -------- Topbar / navegación -------- */
+.topbar {
+    background: #1f3a5f;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+.topbar-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    gap: 16px;
+}
+.brand {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 12px;
+}
+.brand:hover { text-decoration: none; }
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    flex: 1;
+}
+.menu a {
+    color: #d6e2f0;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+.menu a:hover {
+    background: #2a4d7c;
+    color: #fff;
+    text-decoration: none;
+}
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+}
+.btn-logout {
+    background: #c0392b;
+    color: #fff !important;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.btn-logout:hover { background: #a93224; text-decoration: none; }
+
+/* -------- Contenedor principal -------- */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px 40px;
+}
+
+.footer {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+    font-size: 12px;
+}
+
+/* -------- Cards / paneles -------- */
+.card {
+    background: #fff;
+    border: 1px solid #e1e5eb;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.04);
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    gap: 10px;
+}
+.page-header h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #1f3a5f;
+}
+
+/* -------- Botones -------- */
+.btn {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-size: 13px;
+    cursor: pointer;
+    background: #1f3a5f;
+    color: #fff;
+    text-decoration: none;
+}
+.btn:hover { background: #2a4d7c; text-decoration: none; }
+.btn-secondary { background: #6c757d; }
+.btn-secondary:hover { background: #545b62; }
+.btn-success { background: #28a745; }
+.btn-success:hover { background: #218838; }
+.btn-danger { background: #c0392b; }
+.btn-danger:hover { background: #a93224; }
+.btn-warning { background: #f0ad4e; color:#fff; }
+.btn-warning:hover { background: #d49641; }
+.btn-print { background: #555; }
+.btn-sm { padding: 4px 8px; font-size: 12px; }
+
+/* -------- Formularios -------- */
+.form-group { margin-bottom: 14px; }
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+    color: #333;
+}
+.form-control {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccd1d9;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #fff;
+}
+.form-control:focus {
+    outline: none;
+    border-color: #1f3a5f;
+    box-shadow: 0 0 0 2px rgba(31,58,95,.15);
+}
+.form-row {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+.form-row .form-group { flex: 1; min-width: 200px; }
+.help-text {
+    font-size: 12px;
+    color: #777;
+    margin-top: 3px;
+}
+.error-text {
+    font-size: 12px;
+    color: #c0392b;
+    margin-top: 3px;
+}
+
+/* -------- Tablas -------- */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+.table th, .table td {
+    border: 1px solid #e1e5eb;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+.table th {
+    background: #f0f3f8;
+    font-weight: 600;
+    color: #333;
+}
+.table tbody tr:hover { background: #f9fafc; }
+.table .text-right { text-align: right; }
+.table .text-center { text-align: center; }
+.table .text-bold { font-weight: 700; }
+
+/* -------- Alertas -------- */
+.alert {
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    border: 1px solid transparent;
+}
+.alert-success { background: #e6f4ea; border-color: #b6dfc1; color: #1e6f40; }
+.alert-error,
+.alert-danger { background: #fde8e8; border-color: #f5c2c2; color: #9b1c1c; }
+.alert-info { background: #e8f1fb; border-color: #b8d3ee; color: #1f4d7a; }
+.alert-warning { background: #fff5e0; border-color: #f5dfa3; color: #8a6100; }
+
+/* -------- Login -------- */
+.login-wrap {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1f3a5f, #2a4d7c);
+    padding: 20px;
+}
+.login-card {
+    background: #fff;
+    width: 100%;
+    max-width: 380px;
+    padding: 28px;
+    border-radius: 8px;
+    box-shadow: 0 8px 22px rgba(0,0,0,.2);
+}
+.login-card h1 {
+    margin: 0 0 6px 0;
+    font-size: 22px;
+    color: #1f3a5f;
+    text-align: center;
+}
+.login-card .subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 18px;
+    font-size: 13px;
+}
+.login-card .btn { width: 100%; }
+
+/* -------- Dashboard -------- */
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}
+.module-tile {
+    background: #fff;
+    border: 1px solid #e1e5eb;
+    border-radius: 6px;
+    padding: 18px;
+    text-decoration: none;
+    color: #2c2c2c;
+    transition: transform .12s, box-shadow .12s;
+    display: block;
+}
+.module-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(31,58,95,.15);
+    text-decoration: none;
+}
+.module-tile h3 {
+    margin: 0 0 6px 0;
+    color: #1f3a5f;
+    font-size: 16px;
+}
+.module-tile p {
+    margin: 0;
+    color: #666;
+    font-size: 12px;
+}
+
+/* -------- Toolbar de impresión -------- */
+.print-toolbar {
+    background: #f0f3f8;
+    padding: 10px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+}
+.print-toolbar button {
+    background: #1f3a5f;
+    color: #fff;
+    border: 0;
+    padding: 6px 14px;
+    border-radius: 4px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.print-toolbar button:hover { background: #2a4d7c; }
+
+/* -------- Reporte -------- */
+.print-page {
+    background: #fff;
+}
+.report {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 30px 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.report-header { text-align: center; margin-bottom: 18px; }
+.report-header h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #1f3a5f;
+}
+.empresa-info {
+    color: #555;
+    font-size: 12px;
+    margin: 4px 0 12px;
+}
+.empresa-info div { line-height: 1.5; }
+.report-title {
+    font-size: 18px;
+    margin: 12px 0 4px;
+    border-top: 2px solid #1f3a5f;
+    border-bottom: 2px solid #1f3a5f;
+    padding: 6px 0;
+    color: #1f3a5f;
+}
+.report-date { font-size: 12px; color: #555; }
+.report-footer { margin-top: 20px; text-align: center; color: #888; }
+
+/* Detalles del comprobante */
+.detalle-row td input { width: 100%; }
+.detalle-row .cuenta-select { width: 100%; }
