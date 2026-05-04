@@ -1,14 +1,14 @@
 -- ============================================================
 -- Sistema de Contabilidad Básico
--- Base de datos: sis_contable
+-- Base de datos: conta_prueba2
 -- Motor: MariaDB / MySQL
 -- ============================================================
 
-CREATE DATABASE IF NOT EXISTS sis_contable
+CREATE DATABASE IF NOT EXISTS conta_prueba2
     CHARACTER SET utf8mb4
     COLLATE utf8mb4_unicode_ci;
 
-USE sis_contable;
+USE conta_prueba2;
 
 -- ------------------------------------------------------------
 -- Tabla: usuarios

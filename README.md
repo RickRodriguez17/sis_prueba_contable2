@@ -55,10 +55,10 @@ PHP y MariaDB. No requiere instaladores ni asistentes de configuración.
    [phpMyAdmin](http://localhost/phpmyadmin) y ejecutando el archivo:
 
    ```
-   database/sis_contable.sql
+   database/conta_prueba2.sql
    ```
 
-   Esto crea la base `sis_contable`, todas las tablas, los usuarios por
+   Esto crea la base `conta_prueba2`, todas las tablas, los usuarios por
    defecto y las 15 cuentas iniciales.
 
 4. (Opcional) Ajustar las credenciales de la base de datos en
@@ -101,7 +101,7 @@ sis_prueba_contable2/
 │   ├── config.php          Configuración general (BASE_URL, sesión, ...)
 │   └── db.php              Conexión a MariaDB
 ├── database/
-│   └── sis_contable.sql    Script de creación de BD + datos iniciales
+│   └── conta_prueba2.sql    Script de creación de BD + datos iniciales
 ├── includes/
 │   ├── auth.php            Control de sesión y roles
 │   ├── functions.php       Helpers (e, money, validarCodigoCuenta, ...)
